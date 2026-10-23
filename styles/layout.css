@@ -1,0 +1,61 @@
+/*
+filename: layout.css
+author: Hiba Imran
+created: 20 October 2026
+last modified: 23 October 2026
+description: Styles for lab05.html
+*/
+
+.menu { display: inline-block; }
+nav ul { list-style: none; }
+
+aside {
+  border: 2px solid purple;
+  margin: 1em;
+  padding: 1em;
+  background-image: url(images/fade.jpg);
+  width: 30%;
+  float: right;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+aside:hover { display: block; }
+
+header {
+  border: 1px solid darkgray;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: lightgray;
+  text-align: center;
+}
+
+/* Section layout */
+#lists      { float: left; }
+#tables     { float: right; }
+#hyperlinks { clear: both; float: left; }
+#images     { float: right; }
+
+#lists, #tables, #hyperlinks, #images {
+  width: 50%;
+  text-align: center;
+}
+
+ol, ul, dl { text-align: left; }
+
+table  { margin: auto; }
+figure { border: 2px solid #ccc; }
+
+/* Prevent the article from becoming too narrow */
+article { min-width: 30em; }
+
+/* Footer */
+footer {
+  border-top: 4px double navy;
+  clear: both;
+}
+footer p {
+  display: inline-block;
+  width: 33%;
+}
+footer p:first-child  { float: left; }
+footer p:nth-child(2) { text-align: center; }
+footer p:last-child   { float: right; text-align: right; }
